@@ -1,0 +1,7 @@
+numpy
+pandas
+scikit-learn>=1.2
+imbalanced-learn
+matplotlib
+seaborn
+xlrd>=2.0

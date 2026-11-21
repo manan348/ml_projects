@@ -1,0 +1,5 @@
+# Extra packages for DagsHub (data versioning + experiment tracking)
+-r requirements.txt
+dvc
+mlflow
+dagshub

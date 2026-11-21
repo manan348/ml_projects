@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local MLflow runs (created by --track without a remote server)
+mlflow.db
+mlruns/
+mlartifacts/
+
+# Note: creditcard.csv (~150 MB, over GitHub's 100 MB limit) is excluded from
+# Git by DVC (see creditcard.csv.dvc and the README). Concrete_Data.xls is small
+# and is tracked directly in Git.
+/creditcard.csv
