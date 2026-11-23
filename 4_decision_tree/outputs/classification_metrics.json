@@ -1,0 +1,139 @@
+{
+  "is_late": {
+    "selected_variant": "B: tuned tree",
+    "best_params_B": {
+      "tree__class_weight": null,
+      "tree__criterion": "gini",
+      "tree__max_depth": 8,
+      "tree__min_samples_leaf": 50
+    },
+    "best_params_C": {
+      "tree__max_depth": 12,
+      "tree__min_samples_leaf": 50
+    },
+    "cv_comparison": [
+      {
+        "variant": "A: baseline (depth 8, balanced)",
+        "cv_pr_auc": 0.1899,
+        "cv_pr_auc_std": 0.0053,
+        "cv_roc_auc": 0.7457
+      },
+      {
+        "variant": "B: tuned tree",
+        "cv_pr_auc": 0.2194,
+        "cv_pr_auc_std": 0.0114,
+        "cv_roc_auc": 0.7547
+      },
+      {
+        "variant": "C: tuned tree + SMOTE",
+        "cv_pr_auc": 0.1305,
+        "cv_pr_auc_std": 0.0096,
+        "cv_roc_auc": 0.6657
+      }
+    ],
+    "baseline_test": {
+      "threshold": 0.5,
+      "pr_auc": 0.1688640526553707,
+      "roc_auc": 0.7082585607489019,
+      "precision": 0.1428318896941842,
+      "recall": 0.6332288401253918,
+      "f1": 0.23308812923698255,
+      "positives_flagged": 5657
+    },
+    "final_test": {
+      "threshold": 0.16945107398568018,
+      "pr_auc": 0.2051931244856089,
+      "roc_auc": 0.7306729409913079,
+      "precision": 0.22540415704387992,
+      "recall": 0.3824451410658307,
+      "f1": 0.2836384771868643,
+      "positives_flagged": 2165
+    },
+    "top_features": {
+      "purchase_month": 0.2469,
+      "promised_days": 0.2006,
+      "customer_state_RJ": 0.126,
+      "distance_km": 0.12,
+      "customer_state_SP": 0.0426,
+      "seller_state_SP": 0.0389,
+      "approval_hours": 0.0379,
+      "seller_deadline_days": 0.0352,
+      "customer_state_CE": 0.0217,
+      "total_volume_cm3": 0.0195,
+      "total_freight": 0.017,
+      "freight_ratio": 0.0111,
+      "main_category_health_beauty": 0.0097,
+      "max_installments": 0.0096,
+      "seller_state_RJ": 0.0086
+    }
+  },
+  "bad_review": {
+    "selected_variant": "B: tuned tree",
+    "best_params_B": {
+      "tree__class_weight": null,
+      "tree__criterion": "gini",
+      "tree__max_depth": 12,
+      "tree__min_samples_leaf": 200
+    },
+    "best_params_C": {
+      "tree__max_depth": 12,
+      "tree__min_samples_leaf": 100
+    },
+    "cv_comparison": [
+      {
+        "variant": "A: baseline (depth 8, balanced)",
+        "cv_pr_auc": 0.4745,
+        "cv_pr_auc_std": 0.0106,
+        "cv_roc_auc": 0.6876
+      },
+      {
+        "variant": "B: tuned tree",
+        "cv_pr_auc": 0.4919,
+        "cv_pr_auc_std": 0.0065,
+        "cv_roc_auc": 0.6968
+      },
+      {
+        "variant": "C: tuned tree + SMOTE",
+        "cv_pr_auc": 0.4695,
+        "cv_pr_auc_std": 0.0066,
+        "cv_roc_auc": 0.6776
+      }
+    ],
+    "baseline_test": {
+      "threshold": 0.5,
+      "pr_auc": 0.47802684723386435,
+      "roc_auc": 0.6884188836240069,
+      "precision": 0.38991177598772536,
+      "recall": 0.5037165510406343,
+      "f1": 0.43956756756756754,
+      "positives_flagged": 5214
+    },
+    "final_test": {
+      "threshold": 0.26717557251908397,
+      "pr_auc": 0.4927916624541665,
+      "roc_auc": 0.6921091359176901,
+      "precision": 0.45769026077700903,
+      "recall": 0.4261645193260654,
+      "f1": 0.4413651526815499,
+      "positives_flagged": 3758
+    },
+    "top_features": {
+      "days_late": 0.6854,
+      "n_items": 0.0962,
+      "delivery_days": 0.0819,
+      "n_sellers": 0.0356,
+      "carrier_days": 0.0144,
+      "distance_km": 0.0135,
+      "approval_hours": 0.0112,
+      "total_volume_cm3": 0.0083,
+      "purchase_month": 0.008,
+      "total_freight": 0.007,
+      "seller_deadline_days": 0.0069,
+      "total_weight_g": 0.006,
+      "total_price": 0.0045,
+      "payment_value": 0.0039,
+      "promised_days": 0.0037
+    }
+  },
+  "both_targets_correct_test": 0.6784782381797307
+}

@@ -1,0 +1,61 @@
+{
+  "selected_variant": "C: tuned tree, log target",
+  "best_params_B": {
+    "tree__max_depth": 20,
+    "tree__max_features": null,
+    "tree__min_samples_leaf": 20
+  },
+  "best_params_C": {
+    "regressor__tree__max_depth": 15,
+    "regressor__tree__max_features": null,
+    "regressor__tree__min_samples_leaf": 20
+  },
+  "cv_comparison": [
+    {
+      "variant": "A: baseline (depth 8)",
+      "cv_rmse": 61443.833,
+      "cv_rmse_std": 1345.6967,
+      "cv_r2": 0.7178,
+      "train_r2": 0.7637
+    },
+    {
+      "variant": "B: tuned tree",
+      "cv_rmse": 59143.4022,
+      "cv_rmse_std": 1051.7838,
+      "cv_r2": 0.7386,
+      "train_r2": 0.8198
+    },
+    {
+      "variant": "C: tuned tree, log target",
+      "cv_rmse": 58888.0267,
+      "cv_rmse_std": 2063.6056,
+      "cv_r2": 0.7408,
+      "train_r2": 0.8165
+    }
+  ],
+  "baseline_test": {
+    "train_r2": 0.7644216947080138,
+    "test_r2": 0.7296199624999772,
+    "train_rmse": 56155.55497491552,
+    "test_rmse": 59362.47658228891,
+    "test_mae": 41717.27431707376
+  },
+  "final_test": {
+    "train_r2": 0.8209247776024636,
+    "test_r2": 0.7506427674864741,
+    "train_rmse": 48960.15980167371,
+    "test_rmse": 57007.98410788012,
+    "test_mae": 37674.323197922866
+  },
+  "permutation_importance_usd": {
+    "median_income": 59046.0,
+    "population": 25100.0,
+    "households": 24860.0,
+    "ocean_proximity": 19210.0,
+    "latitude": 16177.0,
+    "longitude": 13966.0,
+    "housing_median_age": 6469.0,
+    "total_rooms": 3021.0,
+    "total_bedrooms": 2147.0
+  }
+}
